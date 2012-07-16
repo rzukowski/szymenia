@@ -1,3 +1,37 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.field_with_errors {
+  padding: 2px;
+  background-color: pink;
+}
+
+
+.button {
+border-style: solid;
+ border-width : 1px 4px 4px 1px;
+ text-decoration : none;
+ padding : 4px;
+ background:white;
+ border-color : #69f #00f #00f #69f;
+
+}
+.button:hover {
+background: black;
+color:white;
+border-color: #ccc;
+}
+ a:link {
+ border-style: solid;
+ border-width : 1px 4px 4px 1px;
+ text-decoration : none;
+ padding : 4px;
+ border-color : #69f #00f #00f #69f;
+ }
+ a:hover { border-color: #ccc; }
+
+.create_user {
+width:200px;
+height:20px;
+
+}
