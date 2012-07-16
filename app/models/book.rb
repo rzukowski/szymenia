@@ -1,6 +1,6 @@
 class Book < ActiveRecord::Base
 has_many :users
-validates :uzytkownik, :presence => { :message => "Proszę podać nazwisko oraz imię" }
+validates :uzytkownik, :presence => { :message => "Prosze podac nazwisko oraz imie" }
 
 
 end
