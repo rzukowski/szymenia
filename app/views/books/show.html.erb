@@ -1,0 +1,22 @@
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+Chcesz zarezerwować: 
+  <%= @book.name %>
+</p>
+
+<%= form_for(@book) do |f| %>
+
+ <%= f.hidden_field :rezerwacja, :value => true %>
+
+  <br>
+
+  <%= f.text_area :uzytkownik, :input_html => {:rows => 2, :cols => 20}, :class => "create_user", :id => "rez", :onsubmit => "return validateForm()", :validate => "true" %>
+  <%= f.button :Zarezerwuj, :class => 'button',  :onchange => "return val()", :onsubmit => "return val()" %>
+  <%end%>
+
+
+<%= link_to 'Strona główna', books_path %>

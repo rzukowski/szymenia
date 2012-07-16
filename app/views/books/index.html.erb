@@ -1,0 +1,17 @@
+<h1>Książki do rezerwacji</h1>
+
+
+
+<% @books.each do |book| %>
+ <p>
+    <%= book.name %></td>
+    <br>
+    <br><% if !book.rezerwacja %><%= link_to 'Rezerwuj', edit_book_path(book)  %><%else%> Zarazerwowane przez: <%= book.uzytkownik%><%end%></br>
+  </p>
+  <hr></hr>
+<% end %>
+
+<br />
+
+<%= link_to 'New Book', new_book_path %>
+<% session['return-to'] = request.fullpath %>
