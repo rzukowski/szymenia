@@ -21,7 +21,8 @@ Chcesz zarezerwować:
  <%= f.hidden_field :rezerwacja, :value => true %>
 
   <br>
-
+Podaj imię i nazwisko
+<br>
   <%= f.text_area :uzytkownik, :input_html => {:rows => 2, :cols => 20}, :class => "create_user", :id => "rez", :onsubmit => "return validateForm()", :validate => "true" %>
   <%= f.button :Zarezerwuj, :class => 'button',  :onchange => "return val()", :onsubmit => "return val()" %>
   <%end%>
