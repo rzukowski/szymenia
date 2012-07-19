@@ -8,25 +8,36 @@
 
 
 .button {
+color:black;
 border-style: solid;
  border-width : 1px 4px 4px 1px;
  text-decoration : none;
  padding : 4px;
  background:white;
- border-color : #69f #00f #00f #69f;
+ border-color : black;
 
 }
 .button:hover {
+color:black;
 background: black;
 color:white;
 border-color: #ccc;
 }
  a:link {
+ color:black;
  border-style: solid;
  border-width : 1px 4px 4px 1px;
  text-decoration : none;
  padding : 4px;
- border-color : #69f #00f #00f #69f;
+ border-color : black;
+ }
+  a:visited {
+  color:black;
+ border-style: solid;
+ border-width : 1px 4px 4px 1px;
+ text-decoration : none;
+ padding : 4px;
+ border-color : black;
  }
  a:hover { border-color: #ccc; }
 
